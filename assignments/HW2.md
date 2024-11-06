@@ -1,6 +1,8 @@
 # MUSA 650 Homework 2: Supervised Land Use Classification with Google Earth Engine
 
-In this assignment, you will use Google Earth Engine via Python to implement multi-class land cover classification. You will hand-label Sentinel 2 satellite images which you will then use to train a random forest model. Along the way, you will consider issues like cloud cover, class imbalances,
+In this assignment, you will use Google Earth Engine via Python to implement multi-class land cover classification. You will hand-label Sentinel 2 satellite images which you will then use to train a random forest model. Along the way, you will consider practical remote sensing issues like cloud cover, class imbalances, and feature selection.
+
+**Given that hand-labeling data can be time-consuming, you are encouraged to work in pairs or groups of three to share the workload. You may collaborate on generating the hand-labeled data, provided you submit separate assignment files.**
 
 You are responsible for figuring out the code independently and may refer to tutorials, code examples, or use AI support, but **please cite all sources**.
 
@@ -18,7 +20,7 @@ You'll also use [Sentinel-2 satellite imagery](https://developers.google.com/ear
 
 ### 2.1 Collecting and Labeling Training Data
 
-Using the [interactive `geemap` intereface](https://www.youtube.com/watch?v=VWh5PxXPZw0) or another approach (e.g., QGIS, ArcGIS, a GeoJSON file, etc.), create at least 100 samples (points or polygons) for each of the following four classes: urban, bare, water, and vegetation. Use visual cues and manual inspection to ensure that the samples are accurate. Assign each class a unique label (e.g., 0 for urban, 1 for bare, 2 for water, and 3 for vegetation) and merge the labeled samples into a single dataset.
+Using the [interactive `geemap` intereface](https://www.youtube.com/watch?v=VWh5PxXPZw0) or another approach (e.g., QGIS, ArcGIS, a GeoJSON file, etc.), create at least 100 samples (points or polygons) for each of the following four classes: urban, bare, water, and vegetation. (Again, we encourage you to work in pairs or groups of three to generate these hand labels.) Use visual cues and manual inspection to ensure that the samples are accurate. Assign each class a unique label (e.g., 0 for urban, 1 for bare, 2 for water, and 3 for vegetation) and merge the labeled samples into a single dataset.
 
 ### 2.2 Feature Engineering.
 
@@ -36,25 +38,21 @@ For bonus points, consider adding [kernel filters](https://google-earth-engine.c
 
 ### 3.1 Model Training
 
-Split your data into a training dataset (70%) and a validation dataset (30%) by adding a random column. Train and evaluate a random forest model using the training set with all engineered features.
+Split your data into a training dataset (70%) and a validation dataset (30%). Train and evaluate a random forest model using the training set with all engineered features.
 
-After training, analyze feature importance scores to justify each feature's inclusion. Identify which features are most influential in the classification. Report the final features that you keep in your model.
+After training, analyze [variable importance scores](https://stackoverflow.com/questions/74519767/interpreting-variable-importance-from-random-forest-in-gee) to justify each feature's inclusion. Identify which features are most influential in the classification. Report the final features that you keep in your model.
 
 ### 3.2 Accuracy Assessment
 
 Use the trained model to classify the Sentinel-2 image, creating a land cover classification map with classes for urban, bare, water, and vegetation.
 
-Using the validation data, generate a confusion matrix and calculate the overall accuracy, precision, and recall. Which classes were confused most often with each other. Why do you think this was?
+Using the validation data, generate a confusion matrix and calculate the overall accuracy, precision, and recall. Which classes were confused most often with each other? Why do you think this was?
 
 Visually compare your landcover data for your ROI with the corresponding [landcover data from the European Space Agency](https://developers.google.com/earth-engine/datasets/catalog/ESA_WorldCover_v200). Do your classifications agree? If not, do you notice any patterns in the types of landcover where they differ, or any particular features in the imagery that are hard for your model to recognize (e.g., sand, water, or asphalt)?
 
-## 4. Results
-
 Export the classified image as a GeoTIFF and the confusion matrix and accuracy metrics to a CSV file for documentation.
 
-For bonus points, calculate the area of each land cover class in square kilometers.
-
-## 6. Reflection Questions
+## 4. Reflection Questions
 
 What limitations did you run into when completing this assignment? What might you do differently if you repeated it, or what might you change if you had more time and/or resources?
 
