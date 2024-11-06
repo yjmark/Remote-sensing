@@ -2,7 +2,7 @@
 
 In this assignment, you will use Google Earth Engine via Python to implement multi-class land cover classification. You will hand-label Sentinel 2 satellite images which you will then use to train a random forest model. Along the way, you will consider practical remote sensing issues like cloud cover, class imbalances, and feature selection.
 
-**Given that hand-labeling data can be time-consuming, you are encouraged to work in pairs or groups of three to share the workload. You may collaborate on generating the hand-labeled data, provided you submit separate assignment files.**
+**Given that hand-labeling data can be time-consuming, you are encouraged to work in pairs or groups of three to share the workload. You may collaborate on generating the hand-labeled data, provided you submit separate assignment files. If you choose to do this, you should all use the same ROI, of course.**
 
 You are responsible for figuring out the code independently and may refer to tutorials, code examples, or use AI support, but **please cite all sources**.
 
