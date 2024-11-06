@@ -6,7 +6,7 @@ verify_ssl = true
 [packages]
 geemap = "==0.29.6"
 wxee = "==0.4.1"
-ipykernel = "==6.27.1"
+ipykernel = "*"
 gdown = "==4.7.1"
 folium = "==0.15.1"
 pyproj = "==3.6.1"
@@ -36,6 +36,15 @@ vulture = "*"
 pylint = "*"
 pylint-json2html = "*"
 radon = "*"
+keras = "*"
+tensorflow = "*"
+scikit-image = "*"
+seaborn = "*"
+pydot = "*"
+pydotplus = "*"
 
 [requires]
 python_version = "3.12"
+
+[dev-packages]
+ipykernel = "*"
