@@ -3,6 +3,20 @@ data/
 
 # ignore solutions for now
 assignments/solutions/
+week01/solutions/
+week02/solutions/
+week03/solutions/
+week04/solutions/
+week05/solutions/
+week06/solutions/
+week07/solutions/
+week08/solutions/
+week09/solutions/
+week10/solutions/
+week11/solutions/
+week12/solutions/
+week13/solutions/
+week14/solutions/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
