@@ -2,27 +2,22 @@
 
 ## Objective
 
-This lab introduces you to importing and visualizing geospatial datasets using `planetary_computer and `xarray`. You will work in groups of 2-3 people to query satellite imagery, explore its bands, and visualize the data using `matplotlib`. This exercise also highlights how remote sensing can provide critical insights into land cover, urban development, and environmental change, supporting urban planning, disaster response, and resource management.
+This lab introduces you to importing and visualizing geospatial datasets using `planetary_computer` and `xarray`. You will work in groups of 2-3 people to query satellite imagery, explore its bands, and visualize the data using `matplotlib`. This exercise also highlights how remote sensing can provide critical insights into land cover, urban development, and environmental change, supporting urban planning, disaster response, and resource management.
 
 ## Instructions
 
-Use the tutorial from the following link as the basis for your work:  
-[Project Pythia Landsat ML Cookbook - Data Ingestion](https://projectpythia.org/landsat-ml-cookbook/notebooks/1.0_Data_Ingestion-Geospatial.html)
-
-While the tutorial provides an interactive visualization option, we recommend using regular `matplotlib` for your visualizations in this lab.
+Use the tutorial from the following link as the basis for your work: [Project Pythia Landsat ML Cookbook - Data Ingestion](https://projectpythia.org/landsat-ml-cookbook/notebooks/1.0_Data_Ingestion-Geospatial.html). While the tutorial provides an interactive visualization option, we recommend using regular `matplotlib` for your visualizations in this lab.
 
 ## Steps
 
 1. **Connect to `planetary_computer`**  
-   Set up a connection to the `planetary_computer API.
+   Set up a connection to the Planetary Computer API.
 
 2. **List the Available Collections**  
-   Explore and print all available datasets from the API.
+   Explore and print all datasets available from the API.
 
 3. **Retrieve Landsat 8 Imagery**  
-   Retrieve Landsat 8 imagery for Cairo, Egypt, between '2024-06-01' and '2024-08-31'.
-
-   - Use the interactive `Panel` viewer to explore the retrieved images:
+   Retrieve Landsat 8 imagery for Cairo, Egypt, between '2024-06-01' and '2024-08-31'. Use the interactive `Panel` viewer to explore the retrieved images:
 
    ```
    # Step 3: Preview Items (Optional)
@@ -40,18 +35,16 @@ While the tutorial provides an interactive visualization option, we recommend us
 
 5. **Cloud Cover Analysis**
 
+   - Merge the tiles spatially to create a single image per time step: `ds_merged = xr.concat(datasets, dim="time")`.
    - Calculate the **average, minimum, maximum, and standard deviation** of per-pixel cloud cover across all images.
-   - Merge the images spatially:  
-     `ds_merged = xr.concat(datasets, dim="time")`.
-   - Create a median composite of all images across time.
-
-   - Hint: Set the `attrs` of your data array, including the CRS, to maintain spatial consistency.
+   - Create a single composite image of all the images by taking the median (`ds_composite = ds_merged.median(dim="time")`).
+     - Hint: Set the `attrs` of your data array, including the CRS, to maintain spatial consistency.
 
 6. **Summary Statistics**  
    Return the **mean, minimum, maximum, and standard deviation** of each band for the final composite image.
 
 7. **Visualization**
-   - Plot each of the R, G, and B bands in greyscale using `matplotlib`.
+   - Plot each of the red, green, and blue bands in greyscale using `matplotlib`.
    - Combine the bands to create and plot a composite RGB image in color.
 
 ## Deliverables
