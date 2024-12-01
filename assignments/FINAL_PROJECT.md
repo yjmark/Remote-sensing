@@ -18,7 +18,7 @@ For this final assignment in MUSA 650, you will design and implement a machine l
 
 - Identify a specific urban planning problem to address. Possible topics include:
   - Urban sprawl analysis
-  - Flood risk prediction
+  - Flood identification
   - Heat risk mapping
   - Green corridor identification
 - Explain **why this is a problem**, its **impacts**, and its relevance to urban planning.
