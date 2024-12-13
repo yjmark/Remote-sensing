@@ -1,6 +1,6 @@
 # MUSA 650 Homework 2: Supervised Land Use Classification with Google Earth Engine
 
-In this assignment, you will use Google Earth Engine via Python to implement multi-class land cover classification. You will hand-label Sentinel 2 satellite images which you will then use to train a random forest model. Along the way, you will consider practical remote sensing issues like cloud cover, class imbalances, and feature selection.
+In this assignment, you will use Google Earth Engine via Python to implement multi-class land cover classification. You will hand-label Landsat 8 satellite images which you will then use to train a random forest model. Along the way, you will consider practical remote sensing issues like cloud cover, class imbalances, and feature selection.
 
 **Given that hand-labeling data can be time-consuming, you are encouraged to work in pairs or groups of three to share the workload. You may collaborate on generating the hand-labeled data, provided you submit separate assignment files. If you choose to do this, you should all use the same ROI, of course.**
 
@@ -14,13 +14,13 @@ Submit a single Jupyter Notebook containing code, narrative text, visualizations
 
 For this assignment, you will define the region of interest (ROI) of your choice. We recommend picking an urban area large enough that you will have a sufficient sample size but not so large that it will take an excessively long time to process.
 
-You'll also use [Sentinel-2 satellite imagery](https://developers.google.com/earth-engine/datasets/catalog/sentinel-2) from the European Space Agency for this assignment. Choose images from a single calendar year where the cloud cloud is less than 30%, and then take the median composite of the images to use for your model training.
+You'll also use Landsat 8 satellite imagery from USGS for this assignment. Choose images from 2023, filtering for images with minimal cloud cover.
 
 ## 2. Data Collection and Feature Engineering
 
 ### 2.1 Collecting and Labeling Training Data
 
-Using the [interactive `geemap` intereface](https://www.youtube.com/watch?v=VWh5PxXPZw0) or another approach (e.g., QGIS, ArcGIS, a GeoJSON file, etc.), create at least 100 samples (points or polygons) for each of the following four classes: urban, bare, water, and vegetation. (Again, we encourage you to work in pairs or groups of three to generate these hand labels.) Use visual cues and manual inspection to ensure that the samples are accurate. Assign each class a unique label (e.g., 0 for urban, 1 for bare, 2 for water, and 3 for vegetation) and merge the labeled samples into a single dataset.
+Using the [interactive `geemap` intereface](https://www.youtube.com/watch?v=VWh5PxXPZw0) or another approach (e.g., QGIS, ArcGIS, a GeoJSON file, etc.), create at least 100 samples (points or polygons) for each of the following four classes: urban, bare, water, and vegetation. (Again, we encourage you to work in pairs or groups of three to generate these hand labels.) Use visual cues and manual inspection to ensure that the samples are accurate. Assign each class a unique label (e.g., 0 for urban, 1 for bare, 2 for water, and 3 for vegetation) and merge the labeled samples into a single dataset. You are free to propose any labels you like, as long as 1) you include at least 4 classes, and 2) you justify why they are appropriate for a remote sensing task (for example, including a label for ice cream shops wouldn't make sense, because those can't be detected from aerial imagery).
 
 ### 2.2 Feature Engineering.
 
@@ -44,7 +44,7 @@ After training, analyze [variable importance scores](https://stackoverflow.com/q
 
 ### 3.2 Accuracy Assessment
 
-Use the trained model to classify the Sentinel-2 image, creating a land cover classification map with classes for urban, bare, water, and vegetation.
+Use the trained model to classify the Landsat 8 image, creating a land cover classification map with classes for urban, bare, water, and vegetation (or whatever classes you have chosen).
 
 Using the validation data, generate a confusion matrix and calculate the overall accuracy, precision, and recall. Which classes were confused most often with each other? Why do you think this was?
 
