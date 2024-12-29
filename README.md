@@ -1,107 +1,85 @@
-# MUSA 650 (Spring 2025)
+# Geospatial Machine Learning in Remote Sensing (MUSA 650)
 
-- **Instructor(s):**
-  - Mjumbe Poe, mjumbe@design.upenn.edu
-  - Sofia Fasullo, sfasullo@design.upenn.edu
-- **Schedule:** Wednesdays, 10:15-1:15
-- **Room:** Meyerson Hall, B13
-- **Office Hours:**
-  - Mjumbe:
-    - In person Wednesdays immediately after class, first-come first-served
-    - By appointment
-  - Sofia:
-    - TBD
+[Overview](#overview) | [Objectives](#objectives) | [Format](#format) | [Tips](#tips-for-success) | [Grading](#grading) | [Software](#software) | [Schedule](#schedule) | [Academic Integrity](#academic-integrity-and-ai-use)
 
-[Description](#description) | [Schedule](#course-schedule) | [Objectives](#course-objectives) | [Format](#format) | [Assignments](#assignments) | [Grading](#grading) | [Academic Integrity](#academic-integrity)
+## Overview
 
-The repository contains documentation and code for the class, including:
+Satellite remote sensing is the science of converting raw aerial imagery into actionable intelligence about the built and natural environment. In the context of city planning, this is applied to use cases such as building footprint extraction, multi-class object detection (e.g., cars), and land cover/land use classification. This course will provide you the foundation necessary for application of machine learning algorithms on satellite imagery. We will cover the core concepts of machine learning, including supervised and unsupervised learning; model selection; feature engineering; and performance evaluation. The course will cover traditional methods and algorithms as well as recent deep learning methods using convolutional neural networks and their application to semantic image segmentation.
 
-- [a syllabus](docs/SYLLABUS.md),
-- [setup instructions](docs/SETUP.md), and
-- [optional supplementary material for each week](docs/EXTRAREADING.md).
+### Instructors
 
-## Description
+**Professor [Guray Eras](https://www.med.upenn.edu/cbica/aibil/gerus.html)**
 
-In this course you will learn how to collect, store, wrangle and display cartographic data in a cloud-based setting. You will learn reproducible approaches for pulling spatial data from APIs with emphasis on PostGIS, Airflow, and BigQuery; to wrangle these data in Python and/or JavaScript; and visualize in various platforms including Carto and Metabase. You will build your own APIs and develop your own custom web applications. This course is the second in a progression toward building web-based systems using geospatial data, and expands on the Fall course in JavaScript Programming for Planning.
+- [guray.erus@pennmedicine.upenn.edu](guray.erus@pennmedicine.upenn.edu)
+- Office hours TBD
 
-There will be a strong emphasis on open source tools although we will also strongly rely on proprietary cloud-based infrastructure providers. Besides the technologies used in class, we will be using large and sometimes messy data from which we will be deriving insights from how people inhabit, move around in, and affect their environments. We will be working with datasets published by a variety of organizations, from the local to the national level, across governments, non-profits, and private corporations.
+**[Nissim Lebovits](https://nlebovits.github.io/), MCP (TA)**
 
-The class is divided into four modules:
+- [nissimlebovits@proton.me](nissimlebovits@proton.me)
+- Office hours by appointment ([schedule one here](https://cal.com/nlebovits))
 
-1. **Spatial Analytics with Databases** -- learn the basics of SQL and PostGIS for exploring datasets and answering questions of your data
-2. **Scripting with Cloud Services** -- building basic scripts with queries and interacting with web services/APIs programmatically
-3. **Data Pipelining** -- use Python or JavaScript and SQL to automate extracting, transforming, and loading data into a data warehouse
-4. **Building Interfaces** -- build a dashboard and APIs to answer operational questions using dynamic representations data
+### Objectives
 
-## Course Schedule
+The main learning goal of this class is to provide you with the foundational context and skills necessary for use in machine learning applied to remote sensing and enable you to independently pursue further study and work. We will focus specifically on remote sensing use cases in city planning, with a special emphasis on deep learning applications (e.g., CNNs). You will learn how to define a problem, select appropriate algorithms and tools, design and implement their machine learning models, and apply and validate their models on new datasets.
 
-(subject to adapt to the flow of the semester)
+Given the ready availability of code documentation and AI-generated code, we will emphasize a strong conceptual understanding of remote sensing and machine learning fundamentals. This is a hands-on class involving multiple examples that will be explained and run real-time during the lectures. The course will primarily use Python-based implementations of remote sensing, such as `pystac` and `geemap`, although you will be encouraged to explore other relevant tools on your own.
 
-| W#  | Date   | Topic                                                                      |
-| --- | ------ | -------------------------------------------------------------------------- |
-| 1   | Jan 24 | Introduction                                                               |
-| 2   | Jan 31 | _Analytics_: Spatial Databases & Querying Geospatial Data                  |
-| 3   | Feb 7  | _Analytics_: Joins & More Geospatial SQL Operations                        |
-| 4   | Feb 14 | _Analytics_: Efficient Queries                                             |
-| 5   | Feb 21 | _Scripting_: Working with Data from Files and Web Services                 |
-| 6   | Feb 28 | _Scripting_: More Extracting Data                                          |
-| -   | Mar 6  | **-(SPRING BREAK)-**                                                       |
-| 7   | Mar 13 | _Pipelines_: Implementing ETL in Cloud Services                            |
-| 8   | Mar 20 | _Pipelines_: Deploying to the cloud                                        |
-| 9   | Mar 27 | _Interfaces_: Open Source Business Intelligence Tools                      |
-| 10  | Apr 3  | _Interfaces_: Rendering Data with Custom Applications (APIs and Templates) |
-| 11  | Apr 10 |                                                                            |
-| 12  | Apr 17 |                                                                            |
-| 13  | Apr 24 |                                                                            |
-| 14  | May 1  |                                                                            |
+### Format
 
-## Course Objectives
+The course will be divided into two halves. In the first half of the semester, we will focus on building a strong foundational understanding of remote sensing and machine learning. The second half of the semester will delve into more advanced and specific use cases, such as deep learning and data pipelines.
 
-Students will learn how to use professional tools and cloud-based services to automate the process of preparing data for use in organizational decision making. **By the end of this course students should be able to:**
+Most weeks, we will divide class time evenly between lectures and labs. Lectures will focus on a conceptual overview of the material, while labs will offer hands-on time to work on pairs or groups on assignments designed to build remote sensing skills applied to planning-specific use cases, including in-class exercises, homeworks, and the final project.
 
-- Use SQL to answer questions with the data in a database
-- Set up and use tools for exploring and visualizing data in a database
-- Use web services to create beautiful and meaningful data products
-- Use Python or JavaScript to automate the process of extracting, transforming, and loading data
-- Do all of these things using professional software development tools and methods
+We try to follow the best practices laid out in [_Teaching Tech Together_](https://teachtogether.tech/en/index.html), and we treat this class as a living document: we hope that it will evolve and improve over time and--in addition to explicitly seeking student feedback through surveys--we encourage students to submit suggestions for improvements to the class content as feature requests or pull requests on the GitHub repository. (On this note, we encourage you to check out [our roadmap](ROADMAP.md) to see our plans to develop the course in the future).
 
-## Format
+### Tips for Success
 
-- The majority of lectures will be asynchronous.
-- The beginning of each class will be devoted to answering questions, clarifying content, or discussions.
-- The later part of classes will be interactive, sometimes with some deliverable expected by the end that will make up part of the participation portion of your grade.
+Based on our experiences teaching (and taking!) this class in previous years, here are a couple pieces of advice for how to approach the class:
 
-## Guidelines
+First, be patient. Remote sensing and machine learning are big domains, and it will take you a little while to wrap your head around the jargon and the core concepts. We will deliberately return to key topics repeatedly throughout the semester in order to give you a ample opportunity to absorb all of the most important information.
 
-As we will be collaborating on projects, we will need to use common tools and practices. As such, I will run this course as a benevolent dictator.
+Second, give yourself enough time to complete assignments. Programming always involves a lot of debugging, and this class is no exception. We recommend budgeting at least twice as much time as you _think_ you'll need to complete an assigingment. Trust us--this will save you a lot of stress.
 
-- If you are using Python:
-  - You will use `poetry` to manage your dependencies. I will use `poetry` in my examples.
-- If you are using JavaScript:
-  - You will use `npm` to manage your dependencies. I will use `npm` in my examples.
-- Your code will conform to the linter rules we agree upon as a class (and I have veto power on rules).
+Finally, come ready to explore! Remote sensing and machine learning are massive domains--more than we can possibly cover in one semester. This class is meant to be a launching pad; we hope you'll leave it with a sense of excitement and curiosity about where else remote sensing and machine learning can take you.
 
-## Assignments
+### Grading
 
-There will be assignments with some lectures. Other lectures will have recommended readings and suggested exercises to give additional practice. Labs will often have exercises that are intended to be completed in class or, in some exceptional cases, soon after.
+There are five assignments over the course of the semester: [four homeworks](assignments/), each worth 10% of the overall grade (for a total of 40%) and one [final project](assignments/FINAL_PROJECT.md) worth 40% of the overall grade. A further 20% of the grade is based on participation.
 
-The final project will be the culmination of all of the skills learned in the class. Students will build an automatically updating data product, powered by a cloud-hosted data pipeline, that can be used to make some operational decisions. Expectations are that the products will address some socially relevant domain, and will make use of multiple visualizations of data (static or interactive charts and maps, formatted statistics, templated prose, etc.).
+Each homework assignment will involve the implementation of a machine learning application discussed in class. Homework can be started at any time but is due by the end of class by the date indicated on the syllabus. Late homework will be accepted but penalized. You are encouraged to work in groups, but you must submit a homework assignment that is uniquely yours (see our [section on academic integrity](#academic-integrity-and-ai-use)).
 
-## Grading
+For the term project, you will identify and research a machine learning-based remote sensing problem in urban planning. This will involve collecting and organizing the relevant data, implementing your solution of choice, and delivering a lightning talk (five-minute presentation) on your use case in the final week of class. Grading for the final project is not directly dependent on the successful implementation of the solution to the stated problem, but rather on a coherent, thoughtful analysis of the problem and a thorough justification of the chosen solution, including limitations and potential next steps. Like labs and homeworks,term projects should be completed in groups of 2-3.
 
-- Assignments & Participation: 50%
-- Final Project: 50%
+Homework and final project grades are not directly linked to the accuracy of the final applications. Rather, multiple factors--such as data organization, model selection, and presentation of the results--will be evaluated. Given the ready availability of code documentation and pair programming tools (e.g., Copilot, ChatGPT), the grade for each homework assignment will be divided evenly between the submitted code and the corresponding responses to the analytical questions.
 
-## Course Data
+_Extra credit is available for contributions to the class codebase._ We will offer minimally half a bonus point (i.e., an extra 0.5% on your final grade) for every substantive pull request made to improve the repository, with more points awarded at our discretion for larger contributions. This can include improvements to documentation, bug fixes, and example code to be used in future years.
 
-Some of the data we are using in this course may be proprietary and cannot be openly disseminated. In these cases students will be provided with access to private class repositories of datasets. Derivative insights based on these datasets can be openly shared, especially as part of final project work.
+### Software
 
-## Academic Integrity
+This course relies on the use of Python and various related packages. All software is open-source and freely available. We will use common tools to facilitate collaboration and ease of use. You are expected to use VSCode, the Google Cloud SDK, Git, `pipenv`, and `pyenv` during the course in order to make sure that we’re all using consistent environments and minimize dependency issues and other kinds of software problems. For information on setting up your environment, see the [setup docs](SETUP.md).
 
-In compliance with Penn's [Code of Academic Integrity](http://www.upenn.edu/academicintegrity/ai_codeofacademicintegrity.html), blatantly and egregiously copying another student's work will not be tolerated. However, because this course is designed to help prepare students for work in professional programming environments, _copying and pasting is not universally prohibited_: we encourage students to work together and to freely use the internet as a resource for finding solutions to vexing problems. Citing every copied and pasted line of code is _not_ necessary. Large patterns or multiple lines of code taken from external sources _should_, however, be noted with in-code comments. If an instance is unclear, you should feel free to speak with the instructors.
+## Schedule
 
-### Note about AI tools...
+| Week #       | Date | Topic                                                                                                                                     | Assignment            |
+| ------------ | ---- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| 1            | 1/18 | Overview of remote sensing and satellite imagery appications                                                                              |                       |
+| 2            | 1/25 | Fundamentals of machine learning from a remote sensing perspective                                                                        |                       |
+| 3            | 2/1  | Data preparation: imaging feature extraction, visualization, normalization, data harmonization                                            | HW1                   |
+| 4            | 2/8  | Dimensionality reduction and unsupervised learning                                                                                        |                       |
+| 5            | 2/15 | Supervised learning for land cover classification, Part 1: training, cross-validation, method and model selection, parameter optimization | HW2                   |
+| 6            | 2/22 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification                             |                       |
+| 7            | 2/29 | Ensemble methods in machine learning. Case studies: DSTL and EuroSat challenges                                                           | HW3                   |
+| Spring Break |      |                                                                                                                                           |                       |
+| 8            | 3/14 | Fundamentals of deep learning                                                                                                             |                       |
+| 9            | 3/21 | Recent advances in deep learning: literature review and paper discussion                                                                  | HW4                   |
+| 10           | 3/28 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation                                       | Project Proposals     |
+| 11           | 4/4  | Case studies: DSTL and EuroSat challenges revisited                                                                                       |                       |
+| 12           | 4/11 | Case study: predictive modeling using deep learning                                                                                       |                       |
+| 13           | 4/18 | Big data and machine learning: techniques, tools, challenges, future directions                                                           |                       |
+| 14           | 4/25 | Reviews                                                                                                                                   | Project Presentations |
 
-I don't mind generative AI tools to help with coding -- I use them myself on a limited basis. If you use Chat GPT or any other AI tool, note that you are subject to the same guidelines around citation as above.
+## Academic Integrity and AI Use
 
-Also, understand that many of these tools often make mistakes that can be difficult to identify if you don't know what you're doing. If you and can verify that the generated code is correct, cool. But if you come to me or the TA to help debugging something generated with AI, it is always best to disclose the source of the code (for that matter, I'll be able to tell), as it would be with any code.
+All students are expected to comply with with Penn's [Code of Academic Integrity](http://www.upenn.edu/academicintegrity/ai_codeofacademicintegrity.html), and obvious copying is prohibited. That said, this course relies extensively on [pair programming](https://www.codecademy.com/resources/blog/what-is-pair-programming/) and aims to prepare you for real-world work. So, you are encouraged to learn how to collaborate effectively and use the internet and other sources to support your work, so long as you attribute it clearly when adapting large chunks of code or other material from other sources. In cases where this is unclear, please make sure to attribute your source.
+
+Relatedly, we have no issue with using AI tools to help with coding (note: you have all have [free GitHub Copilot access as long as you are students](https://education.github.com/pack)). That said, when using any of these tools, you are subject to the standard citation guidelines. Also, be aware that AI tools are subject to mistakes, especially as you get deeper into specialized technical tools. If you are too reliant on these tools, you run the risk of wasting time debugging nonsense code, or not understanding the underlying strucure of what you're writing. Ultimately, it's in your best interest to learn to use AI tools as _tools_--not as replacements for critical thinking--and to learn how to use them _intelligently and effectively_.
