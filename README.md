@@ -34,7 +34,7 @@ The course will be divided into two halves. In the first half of the semester, w
 
 Most weeks, we will divide class time evenly between lectures and labs. Lectures will focus on a conceptual overview of the material, while labs will offer hands-on time to work on pairs or groups on assignments designed to build remote sensing skills applied to planning-specific use cases, including in-class exercises, homeworks, and the final project.
 
-We try to follow the best practices laid out in [_Teaching Tech Together_](https://teachtogether.tech/en/index.html), and we treat this class as a living document: we hope that it will evolve and improve over time and--in addition to explicitly seeking student feedback through surveys--we encourage students to submit suggestions for improvements to the class content as feature requests or pull requests on the GitHub repository. (On this note, we encourage you to check out [our roadmap](ROADMAP.md) to see our plans to develop the course in the future).
+We try to follow the best practices laid out in [_Teaching Tech Together_](https://teachtogether.tech/en/index.html), and we treat this class as a living document: we hope that it will evolve and improve over time and--in addition to explicitly seeking student feedback through surveys--we encourage students to submit suggestions for improvements to the class content as feature requests or pull requests on the GitHub repository. (On this note, we encourage you to check out [our roadmap](docs/ROADMAP.md) to see our plans to develop the course in the future).
 
 ### Tips for Success
 
@@ -60,7 +60,7 @@ _Extra credit is available for contributions to the class codebase._ We will off
 
 ### Software
 
-This course relies on the use of Python and various related packages. All software is open-source and freely available. We will use common tools to facilitate collaboration and ease of use. You are expected to use VSCode, the Google Cloud SDK, Git, `pipenv`, and `pyenv` during the course in order to make sure that we’re all using consistent environments and minimize dependency issues and other kinds of software problems. For information on setting up your environment, see the [setup docs](SETUP.md).
+This course relies on the use of Python and various related packages. All software is open-source and freely available. We will use common tools to facilitate collaboration and ease of use. You are expected to use VSCode, the Google Cloud SDK, Git, `pipenv`, and `pyenv` during the course in order to make sure that we’re all using consistent environments and minimize dependency issues and other kinds of software problems. For information on setting up your environment, see the [setup docs](docs/SETUP.md).
 
 ## Schedule
 
