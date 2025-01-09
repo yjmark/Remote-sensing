@@ -2,11 +2,13 @@
 
 [Overview](#overview) | [Objectives](#objectives) | [Format](#format) | [Tips](#tips-for-success) | [Grading](#grading) | [Software](#software) | [Schedule](#schedule) | [Academic Integrity](#academic-integrity-and-ai-use)
 
+[Click here to join the Slack workspace.](https://join.slack.com/t/musa650spring2025/shared_invite/zt-2xlntepg4-mhmTgu10OlqMA~vvznUChA)
+
 ## Overview
 
 Satellite remote sensing is the science of converting raw aerial imagery into actionable intelligence about the built and natural environment. In the context of city planning, this is applied to use cases such as building footprint extraction, multi-class object detection (e.g., cars), and land cover/land use classification. This course will provide you the foundation necessary for application of machine learning algorithms on satellite imagery. We will cover the core concepts of machine learning, including supervised and unsupervised learning; model selection; feature engineering; and performance evaluation. The course will cover traditional methods and algorithms as well as recent deep learning methods using convolutional neural networks and their application to semantic image segmentation.
 
-## Schedule
+### Schedule
 
 MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13.
 
