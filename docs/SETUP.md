@@ -2,37 +2,23 @@
 
 ## Prerequisites
 
-This project relies heavily on Google Earth Engine, so, before anything else, make sure you have a Google Cloud account set up. Once you do, install the [Google Cloud CLI](https://cloud.google.com/sdk/docs/install) and authenticate.
+### Required Software
 
-Next, clone this repository:
+For this class, you will need [Python](https://www.python.org/downloads/), [VSCode](https://code.visualstudio.com/download), [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), [Pyenv](https://github.com/pyenv/pyenv), [Pipenv](https://pipenv.pypa.io/en/latest/installation.html), and thte [Google Cloud CLI](https://cloud.google.com/sdk/docs/install). Prior to proceeding to the setup instructions, make sure you have all of these installed for your OS (see the hyperlinks to the setup instructions).
+
+### Google Cloud Account
+
+We will use Google Earth Engine at different points in this course. In order to do so, please [follow these instructions](https://towardsai.net/p/machine-learning/how-to-set-up-a-google-earth-engine-cloud-project) to make sure you have a Google Cloud account set up for use with Google Earth Engine.
+
+## Setup Instructions
+
+Once you have installed the required software and set up your Google Cloud account, open a git terminal and clone this repository in your desired location:
 
 ```
 git clone https://github.com/nlebovits/musa-650-spring-2025.git
 ```
 
-Create a `/credentials` subdirectory in the root of the repository. This will be ignored by Git. Download a service account key associated with the HotspotStoplight project, place it in the `/credentials` subdirectory, and name it `service-account-key.json`.
-
-1. Create a `credentials/` subdirectory in the root directory and add it to `.gitignore`.
-2. Place the downloaded service account key in the `credentials/` directory.
-3. Create a `.env` file in the `src/` directory with the following content:
-
-   ```
-   GOOGLE_CLOUD_PROJECT=your-project-name
-   GOOGLE_CLOUD_BUCKET=your-bucket-name
-   GOOGLE_APPLICATION_CREDENTIALS=credentials/service-account-key.json
-   ```
-
-4. Enable the Google Earth Engine (GEE) API for your project and register for GEE usage.
-5. Run `earthengine authenticate` in your terminal.
-
-### Setup
-
-Install the following tools:
-
-1. `pipenv`: Follow the instructions at https://pipenv.pypa.io/en/latest/installation.html
-2. `pyenv`: Follow the instructions at https://github.com/pyenv/pyenv
-
-Once installed and the repo is cloned, navigate to the root directory, install Python 3.11, install dependencies, and activate the virtual environment:
+Once the repo is cloned, navigate to the root directory, install Python 3.11, install dependencies, and activate the virtual environment:
 
 ```
 pyenv install 3.11
@@ -40,3 +26,7 @@ pyenv local 3.11
 pipenv install
 pipenv shell
 ```
+
+Finally, using the Google Cloud CLI, run `earthengine authenticate` in your terminal to set up Google Earth Engine access (see these instructions for more information). _It is likely that you will run into issues here; please troubleshoot as a class in person or on the discussion board on GitHub so we can solve problems collectively._
+
+Congrats! You're ready to go. :)
