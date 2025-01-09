@@ -50,7 +50,7 @@ jenkspy = "*"
 np-utils = "*"
 
 [requires]
-python_version = "3.12"
+python_version = "3.11"
 
 [dev-packages]
 ipykernel = "*"
@@ -63,3 +63,4 @@ pylint-json2html = "*"
 isort = "*"
 mypy = "*"
 pretty-errors = "*"
+ruff = "*"
