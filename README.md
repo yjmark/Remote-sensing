@@ -6,6 +6,10 @@
 
 Satellite remote sensing is the science of converting raw aerial imagery into actionable intelligence about the built and natural environment. In the context of city planning, this is applied to use cases such as building footprint extraction, multi-class object detection (e.g., cars), and land cover/land use classification. This course will provide you the foundation necessary for application of machine learning algorithms on satellite imagery. We will cover the core concepts of machine learning, including supervised and unsupervised learning; model selection; feature engineering; and performance evaluation. The course will cover traditional methods and algorithms as well as recent deep learning methods using convolutional neural networks and their application to semantic image segmentation.
 
+## Schedule
+
+MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13.
+
 ### Instructors
 
 **Professor [Guray Eras](https://www.med.upenn.edu/cbica/aibil/gerus.html)**
@@ -62,21 +66,21 @@ This course relies on the use of Python and various related packages. All softwa
 
 | Week #       | Date | Topic                                                                                                                                     | Assignment            |
 | ------------ | ---- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| 1            | 1/18 | Overview of remote sensing and satellite imagery appications                                                                              |                       |
-| 2            | 1/25 | Fundamentals of machine learning from a remote sensing perspective                                                                        |                       |
-| 3            | 2/1  | Data preparation: imaging feature extraction, visualization, normalization, data harmonization                                            | HW1                   |
-| 4            | 2/8  | Dimensionality reduction and unsupervised learning                                                                                        |                       |
-| 5            | 2/15 | Supervised learning for land cover classification, Part 1: training, cross-validation, method and model selection, parameter optimization | HW2                   |
-| 6            | 2/22 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification                             |                       |
-| 7            | 2/29 | Ensemble methods in machine learning. Case studies: DSTL and EuroSat challenges                                                           | HW3                   |
+| 1            | 1/16 | Overview of remote sensing and satellite imagery appications                                                                              |                       |
+| 2            | 1/23 | Fundamentals of machine learning from a remote sensing perspective                                                                        |                       |
+| 3            | 1/30 | Data preparation: imaging feature extraction, visualization, normalization, data harmonization                                            | HW1                   |
+| 4            | 2/6  | Dimensionality reduction and unsupervised learning                                                                                        |                       |
+| 5            | 2/13 | Supervised learning for land cover classification, Part 1: training, cross-validation, method and model selection, parameter optimization | HW2                   |
+| 6            | 2/20 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification                             |                       |
+| 7            | 2/27 | Ensemble methods in machine learning. Case studies: DSTL and EuroSat challenges                                                           | HW3                   |
 | Spring Break |      |                                                                                                                                           |                       |
-| 8            | 3/14 | Fundamentals of deep learning                                                                                                             |                       |
-| 9            | 3/21 | Recent advances in deep learning: literature review and paper discussion                                                                  | HW4                   |
-| 10           | 3/28 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation                                       | Project Proposals     |
-| 11           | 4/4  | Case studies: DSTL and EuroSat challenges revisited                                                                                       |                       |
-| 12           | 4/11 | Case study: predictive modeling using deep learning                                                                                       |                       |
-| 13           | 4/18 | Big data and machine learning: techniques, tools, challenges, future directions                                                           |                       |
-| 14           | 4/25 | Reviews                                                                                                                                   | Project Presentations |
+| 8            | 3/13 | Fundamentals of deep learning                                                                                                             |                       |
+| 9            | 3/20 | Recent advances in deep learning: literature review and paper discussion                                                                  | HW4                   |
+| 10           | 3/27 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation                                       | Project Proposals     |
+| 11           | 4/3  | Case studies: DSTL and EuroSat challenges revisited                                                                                       |                       |
+| 12           | 4/10 | Case study: predictive modeling using deep learning                                                                                       |                       |
+| 13           | 4/17 | Big data and machine learning: techniques, tools, challenges, future directions                                                           |                       |
+| 14           | 4/24 | Reviews                                                                                                                                   | Project Presentations |
 
 ## Academic Integrity and AI Use
 
