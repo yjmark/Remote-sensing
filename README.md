@@ -14,7 +14,7 @@ MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13.
 
 ### Instructors
 
-**Professor [Guray Eras](https://www.med.upenn.edu/cbica/aibil/gerus.html)**
+**Professor [Guray Erus](https://www.med.upenn.edu/cbica/aibil/gerus.html)**
 
 - [guray.erus@pennmedicine.upenn.edu](guray.erus@pennmedicine.upenn.edu)
 - Office hours TBD
