@@ -12,12 +12,17 @@ Satellite remote sensing is the science of converting raw aerial imagery into ac
 
 MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13.
 
+- Class Zoom Link: https://pennmedicine.zoom.us/j/95635616221
+
+  In person participation is required. Online participation is an option only in case of a valid excuse with approval.
+
 ### Instructors
 
-**Professor [Guray Erus](https://www.med.upenn.edu/cbica/aibil/gerus.html)**
+**[Guray Erus](https://www.med.upenn.edu/cbica/aibil/gerus.html), PhD**
 
 - [guray.erus@pennmedicine.upenn.edu](guray.erus@pennmedicine.upenn.edu)
-- Office hours TBD
+- Office hours: Friday 3-5 PM (or by appointment in case of conflict)
+- Office Hour Zoom Link: https://pennmedicine.zoom.us/j/7950288127?pwd=RU1XNXhqK25ERDZmd0p5S000bjZlUT09
 
 **[Nissim Lebovits](https://nlebovits.github.io/), MCP (TA)**
 
