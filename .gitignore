@@ -182,3 +182,22 @@ cython_debug/
 #.idea/
 week05/solutions/nlcd_supervised_classification.ipynb
 week05/solutions/nlcd_supervised_classification.ipynb
+
+# Temp hide future classes
+week02/
+week03/
+week04/
+week05/
+week06/
+week07/
+week08/
+week09/
+week10/
+week11/
+week12/
+week13/
+week14/
+
+# Ignore tmp folder
+**/tmp*
+
