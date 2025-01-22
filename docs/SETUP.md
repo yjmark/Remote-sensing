@@ -48,7 +48,9 @@ We will use Google Earth Engine at different points in this course. In order to 
 
 ## Setup Instructions
 
-Once you have installed the required software and set up your Google Cloud account, open a git terminal and clone this repository in your desired location:
+Once you have installed the required software and set up your Google Cloud account, [fork this repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo). Then, open a git terminal and clone your fork to your desired location.
+
+For example (you'll have to update the exact repo path):
 
 ```
 git clone https://github.com/nlebovits/musa-650-spring-2025.git/
