@@ -71,23 +71,23 @@ This course relies on the use of Python and various related packages. All softwa
 
 ## Schedule
 
-| Week #       | Date | Topic                                                                                                                                     | Assignment            |
-| ------------ | ---- | ----------------------------------------------------------------------------------------------------------------------------------------- | --------------------- |
-| 1            | 1/16 | Overview of remote sensing and satellite imagery appications                                                                              |                       |
-| 2            | 1/23 | Fundamentals of machine learning from a remote sensing perspective                                                                        |                       |
-| 3            | 1/30 | Data preparation: imaging feature extraction, visualization, normalization, data harmonization                                            | HW1                   |
-| 4            | 2/6  | Dimensionality reduction and unsupervised learning                                                                                        |                       |
-| 5            | 2/13 | Supervised learning for land cover classification, Part 1: training, cross-validation, method and model selection, parameter optimization | HW2                   |
-| 6            | 2/20 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification                             |                       |
-| 7            | 2/27 | Ensemble methods in machine learning. Case studies: DSTL and EuroSat challenges                                                           | HW3                   |
-| Spring Break |      |                                                                                                                                           |                       |
-| 8            | 3/13 | Fundamentals of deep learning                                                                                                             |                       |
-| 9            | 3/20 | Recent advances in deep learning: literature review and paper discussion                                                                  | HW4                   |
-| 10           | 3/27 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation                                       | Project Proposals     |
-| 11           | 4/3  | Case studies: DSTL and EuroSat challenges revisited                                                                                       |                       |
-| 12           | 4/10 | Case study: predictive modeling using deep learning                                                                                       |                       |
-| 13           | 4/17 | Big data and machine learning: techniques, tools, challenges, future directions                                                           |                       |
-| 14           | 4/24 | Reviews                                                                                                                                   | Project Presentations |
+| Week #       | Date | Topic                                                                                                                                     | Assignment                |
+| ------------ | ---- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| 1            | 1/16 | Overview of remote sensing and satellite imagery appications                                                                              |                           |
+| 2            | 1/23 | Fundamentals of machine learning from a remote sensing perspective                                                                        |                           |
+| 3            | 1/30 | Data preparation: imaging feature extraction, visualization, normalization, data harmonization                                            | HW1 Due                   |
+| 4            | 2/6  | Dimensionality reduction and unsupervised learning                                                                                        |                           |
+| 5            | 2/13 | Supervised learning for land cover classification, Part 1: training, cross-validation, method and model selection, parameter optimization | HW2 Due                   |
+| 6            | 2/20 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification                             |                           |
+| 7            | 2/27 | Ensemble methods in machine learning. Case studies: DSTL and EuroSat challenges                                                           | HW3 Due                   |
+| Spring Break |      |                                                                                                                                           |                           |
+| 8            | 3/13 | Fundamentals of deep learning                                                                                                             |                           |
+| 9            | 3/20 | Recent advances in deep learning: literature review and paper discussion                                                                  | HW4 Due                   |
+| 10           | 3/27 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation                                       | Project Proposals Due     |
+| 11           | 4/3  | Case studies: DSTL and EuroSat challenges revisited                                                                                       |                           |
+| 12           | 4/10 | Case study: predictive modeling using deep learning                                                                                       |                           |
+| 13           | 4/17 | Big data and machine learning: techniques, tools, challenges, future directions                                                           |                           |
+| 14           | 4/24 | Reviews                                                                                                                                   | Project Presentations Due |
 
 ## Academic Integrity and AI Use
 
