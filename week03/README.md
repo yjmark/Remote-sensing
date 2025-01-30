@@ -4,11 +4,9 @@
 
 In this week's class we will continue the review of basics of ML, but with a strong focus on hands-on practice
 
-- [Overview of ML](w1_MUSA650-MLIntro.pdf)
-- [ML Basics notebook](ml_basics_1.ipynb)
 - [Data handling lab](lab.ipynb)
-- [A visual intro to supervised learning](http://www.r2d3.us/visual-intro-to-machine-learning-
-part-1)
+- [ML Basics notebook](ml_basics_1.ipynb)
+- [A visual intro to supervised learning](http://www.r2d3.us/visual-intro-to-machine-learning-part-1)
 - [Bias and variance](http://www.r2d3.us/visual-intro-to-machine-learning-part-2)
 - [Classifier Comparison](Prac2_ClassifierComparison_v1.ipynb)
 
