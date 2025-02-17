@@ -1,6 +1,6 @@
 # MUSA 650: Machine Learning in Remote Sensing
 
-## Week7: Deep Learning Basics
+## Week6: Deep Learning Basics
 
 This repository contains:
 
