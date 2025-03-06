@@ -9,7 +9,8 @@ This repository contains:
 - [Illustration of a convolution](https://setosa.io/ev/image-kernels)
 - [Convolutional Neural Networks](DLBasics_SimpleCNN.ipynb)
 - [Data augmentation with cats](DLBasics_KerasDataAugmentation.ipynb)
-- [MNIST Classification using PyTorch](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)
+- [PyTorch: MNIST Classification](https://pytorch.org/tutorials/beginner/basics/quickstart_tutorial.html)
+- [PyTorch: Autograd](https://pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html)
 
     
 This is a practical session. Please be ready to run the code on your own 
